@@ -1,5 +1,6 @@
 /*
-  Implemente a função calculator que recebe dois números inteiros como parâmetro e retorna um objeto com as seguintes chaves:
+  Implemente a função calculator que recebe dois números inteiros como parâmetro e retorna um objeto com as seguintes 
+  chaves:
     - sum;
     - mult;
     - div;
@@ -17,7 +18,8 @@
   Comportamento:
   calculator(1, 2); // { sum: 3, mult: 2, div: 1, sub: 0 }
 
-  Depois de ter implementado a função calculator, desenvolva uma função que converta objetos em arrays, de chaves, valores ou ambos.
+  Depois de ter implementado a função calculator, desenvolva uma função que converta 
+  objetos em arrays, de chaves, valores ou ambos.
   A sua função deve receber dois parâmetros:
 
     * o primeiro parâmetro deve ser uma string que indica o tipo de conversão;
@@ -34,11 +36,19 @@
 */
 
 const calculator = (number1, number2) => {
-  // adicione seu código aqui
+  let operation = {
+    sum: number1 + number2,
+    mult: number1 * number2,
+    div: Math.floor(number1 / number2),
+    sub: number1 - number2,
+  };
+  return operation;
 };
 
 const arrayGenerator = (type, object) => {
-  // adicione seu código aqui
+  if (type === 'keys') { return Object.keys(object); }
+  if (type === 'values') { return Object.values(object); }
+  if (type === 'entries') { return Object.entries(object); }
 };
 
 module.exports = { calculator, arrayGenerator };
