@@ -10,7 +10,8 @@
   - Somar o valor da conta.
 
   A estrutura deste código e deste objeto já está definida e você precisa implementá-la.
-  Abaixo você verá uma série de testes e passos que irão guiar você e, que devem NECESSARIAMENTE ser realizados em ordem para o bom desenvolvimento do sistema.
+  Abaixo você verá uma série de testes e passos que irão guiar você e, que devem NECESSARIAMENTE 
+  ser realizados em ordem para o bom desenvolvimento do sistema.
 
   Desenvolvimento:
   - Uma função:
@@ -18,7 +19,8 @@
   - Recebe um parâmetro que é um objeto, o menu:
     Exemplo: { food: {'coxinha': 3.9, 'sopa': 9.9}, drink: {'agua': 3.9, 'cerveja': 6.9} }.
 
-  A função createMenu() então, retornará um novo objeto. Este novo objeto contém algumas chaves e ao acessar cada uma delas temos os seguintes retornos:
+  A função createMenu() então, retornará um novo objeto. Este novo objeto contém algumas chaves 
+  e ao acessar cada uma delas temos os seguintes retornos:
 
   - Uma chave `fetchMenu` retornando o menu, que nada mais é que o objeto passado como parâmetro para createMenu()
 
@@ -93,8 +95,18 @@
 // - retornará o valor somado acrescido de 10%.
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
-const createMenu = () => {
-  // adicione seu código aqui
-};
+const createMenu = (menu) => ({ 
+  const fm = {
+    fetchMenu: () => menu,
+    comsumption: [],
+    order: (request) => fm.comsumption.push(request);
+  },
+  pay: () => {
+    let total = 0;
+    for (let i = 0; i < fm.consumption.length; i += 1) {
+
+  } 
+  food: { coxinha: 3.9, sopa: 9.9 }, 
+  drink: { agua: 3.9, cerveja: 6.9 } });
 
 module.exports = createMenu;
